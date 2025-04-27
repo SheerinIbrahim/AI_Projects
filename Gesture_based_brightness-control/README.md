@@ -8,9 +8,9 @@ The system captures hand gestures from the webcam feed, calculates the distance 
 
 - Real-time hand gesture detection
 
-- Volume control via hand gestures
+- Brightness control via hand gestures
 
-- Interactive graphical interface showing current volume
+- Interactive graphical interface showing current brightness
 
 - Works in real-time with a webcam feed
 
@@ -22,9 +22,7 @@ The system captures hand gestures from the webcam feed, calculates the distance 
 
 - MediaPipe: A framework for building multimodal applied ML pipelines for hand tracking.
 
-- PyAudio: A library for audio processing (used internally by pycaw).
-
-- PyCaw: A Windows audio library for controlling system volume.
+- screen_brightness_control: A library to programmatically control screen brightness.
 
 - NumPy: A package for scientific computing, used here for handling numerical operations like interpolation.
 
@@ -36,7 +34,7 @@ The system captures hand gestures from the webcam feed, calculates the distance 
 
 Clone this repository to your local machine:
 
-	git clone https://github.com/SheerinIbrahim/GestureBasedVolumeControl.git
+	git clone https://github.com/SheerinIbrahim/Gesture_based_brightness_control.git
 
 Navigate to the project directory:
 
@@ -56,6 +54,6 @@ To run the gesture-based volume control system:
 
 		python main.py
 
-This will open the webcam feed, and as you move your hand, the volume will adjust based on the distance between your thumb and index finger.
+This will open the webcam feed, and as you move your hand, the brightness will adjust based on the distance between your thumb and index finger.
 
 Press 'q' to quit the webcam feed.
