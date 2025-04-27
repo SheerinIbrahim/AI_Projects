@@ -1,94 +1,61 @@
-Gesture-Based Volume Control 🎚️🖐️
+# Gesture-Based Volume Control 🎚️🖐️
 
-A Python project that controls your system volume by detecting hand gestures using your webcam!
-Move your thumb and index finger closer or farther to decrease or increase the volume dynamically.
-Built with OpenCV, MediaPipe, PyCaw, and hand tracking modules.
+This project uses hand gesture recognition to control the system's volume using the webcam. It leverages computer vision techniques to detect hand gestures and maps the distance between the thumb and index finger to control the volume. The project is built using Python, OpenCV, MediaPipe, and PyAudio, with additional integration for volume control using the pycaw library for Windows.
 
+The system uses the webcam to detect hand positions, and based on the distance between the thumb and index finger, it adjusts the system volume. When the distance is small, the volume is set low, and as the distance increases, the volume increases accordingly.
 
-🛠️ Technologies Used
+## Features
 
-Python 3.8+
+- Real-time hand gesture detection
 
-OpenCV – for video capture and drawing
+- Volume control via hand gestures
 
-HandTrackingSheerin - A custom Python package used for hand tracking and gesture recognition using MediaPipe
+- Interactive graphical interface showing current volume
 
-NumPy – for mathematical operations
+- Works in real-time with a webcam feed
 
-PyCaw – to control system audio (Windows only)
+## Technologies Used
 
-Math – for distance calculation between fingers
+- Python: The programming language used to develop the project.
 
-comtypes – for COM interface with system volume
+- OpenCV: A computer vision library for real-time image processing.
 
-✨ Features
+- MediaPipe: A framework for building multimodal applied ML pipelines for hand tracking.
 
-Detects hand landmarks in real-time using your webcam.
+- PyAudio: A library for audio processing (used internally by pycaw).
 
-Measures the distance between thumb and index fingertips.
+- PyCaw: A Windows audio library for controlling system volume.
 
-Dynamically maps the distance to volume percentage (0–100%).
+- NumPy: A package for scientific computing, used here for handling numerical operations like interpolation.
 
-Visual feedback:
+- HandTrackingSheerin: A custom Python package used for hand tracking and gesture recognition (uploaded to PyPI).
 
-Circle on thumb and index finger.
+- Math: For calculating the distance between the thumb and index finger.
 
-Line between fingers.
+## Installation
 
-Volume bar showing current volume.
+Clone this repository to your local machine:
 
-Real-time FPS displayed on the screen.
+	git clone https://github.com/SheerinIbrahim/GestureBasedVolumeControl.git
 
-Smooth volume control without any physical contact with your system!
+Navigate to the project directory:
 
-🔥 How It Works
+	cd GestureBasedVolumeControl
 
-Hand Detection:
-Using HandTrackingSheerin, your hand is detected, and landmarks (points on fingers) are identified.
+Install the dependencies from the requirements.txt:
 
-Distance Calculation:
-The distance between the tip of the thumb (id=4) and the tip of the index finger (id=8) is calculated using the Pythagoras theorem (math.hypot).
+	pip install -r requirements.txt
 
-Volume Mapping:
-The measured distance (between 40 to 200 pixels) is mapped to a volume range (0% to 100%) using numpy.interp().
+## Usage
 
-Volume Adjustment:
-Volume is updated in real-time through PyCaw, directly controlling your Windows system volume.
+To run the gesture-based volume control system:
 
-Visual Interface:
-Real-time drawing on webcam feed — finger positions, connection line, volume percentage, and a dynamic volume bar.
+- Ensure you have a webcam connected to your system.
 
-🚀 Getting Started
+- Execute the following command:
 
-1. Clone the repository
+		python main.py
 
-git clone https://github.com/your-username/GestureBasedVolumeControl.git
-cd GestureBasedVolumeControl
+This will open the webcam feed, and as you move your hand, the volume will adjust based on the distance between your thumb and index finger.
 
-2. Install Dependencies
-
-pip install -r requirements.txt
-
-Or install individually:
-
-pip install opencv-python mediapipe pycaw comtypes numpy
-
-3. Run the Project
-
-python main.py
-
-📜 Requirements
-
-Operating System: Windows (PyCaw is Windows-specific)
-
-Python: 3.8 or higher
-
-Webcam: Internal or external webcam required
-
-⚡ Controls
-
-Bring thumb and index finger close → Volume decreases
-
-Move thumb and index finger apart → Volume increases
-
-Press 'q' → Exit the application
+Press 'q' to quit the webcam feed.
