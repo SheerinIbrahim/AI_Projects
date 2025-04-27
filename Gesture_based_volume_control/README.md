@@ -36,11 +36,11 @@ The system uses the webcam to detect hand positions, and based on the distance b
 
 Clone this repository to your local machine:
 
-	git clone https://github.com/SheerinIbrahim/GestureBasedVolumeControl.git
+	git clone https://github.com/SheerinIbrahim/AI_Projects.git
 
 Navigate to the project directory:
 
-	cd GestureBasedVolumeControl
+	cd AI_Projects/Gesture_based_volume_control
 
 Install the dependencies from the requirements.txt:
 
