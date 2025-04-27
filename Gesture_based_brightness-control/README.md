@@ -35,7 +35,10 @@ The system captures hand gestures from the webcam feed, calculates the distance 
 Clone this repository to your local machine:
 
 	git clone https://github.com/SheerinIbrahim/AI_Projects.git
-cd AI_Projects/Gesture_based_brightness-control
+
+Navigate to the project directory:
+
+	cd AI_Projects/Gesture_based_brightness_control
 
 Install the dependencies from the requirements.txt:
 
