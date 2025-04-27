@@ -22,7 +22,7 @@ def set_volume_to(volume_level):
         volume.SetMasterVolumeLevelScalar(scaled_value, None)
 
 # Open webcam feed
-def volume_based_gesture_control():
+def volume_control():
 
     detector = htm()
     cap =cv2.VideoCapture(0)
@@ -81,4 +81,4 @@ def volume_based_gesture_control():
 
 
 if __name__ == "__main__":
-    volume_based_gesture_control()
+    volume_control()
