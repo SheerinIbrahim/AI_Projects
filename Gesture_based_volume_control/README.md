@@ -11,7 +11,7 @@ Python 3.8+
 
 OpenCV – for video capture and drawing
 
-MediaPipe – for real-time hand tracking
+HandTrackingSheerin - A custom Python package used for hand tracking and gesture recognition using MediaPipe
 
 NumPy – for mathematical operations
 
@@ -20,7 +20,6 @@ PyCaw – to control system audio (Windows only)
 Math – for distance calculation between fingers
 
 comtypes – for COM interface with system volume
-
 
 ✨ Features
 
@@ -75,11 +74,11 @@ Or install individually:
 pip install opencv-python mediapipe pycaw comtypes numpy
 
 3. Run the Project
-bash
-Copy
-Edit
+
 python main.py
+
 📜 Requirements
+
 Operating System: Windows (PyCaw is Windows-specific)
 
 Python: 3.8 or higher
@@ -87,16 +86,9 @@ Python: 3.8 or higher
 Webcam: Internal or external webcam required
 
 ⚡ Controls
+
 Bring thumb and index finger close → Volume decreases
 
 Move thumb and index finger apart → Volume increases
 
 Press 'q' → Exit the application
-
-📋 Notes
-The project uses a custom hand tracking module (HandTrackingSheerin) based on MediaPipe for detecting hands.
-
-The volume bar and percentage provide visual feedback for better interaction.
-
-Accuracy may depend on lighting conditions and webcam quality.
-
