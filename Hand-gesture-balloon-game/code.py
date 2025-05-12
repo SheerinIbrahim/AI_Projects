@@ -101,7 +101,7 @@ class BalloonGame:
                         if not balloon.popped and not balloon.is_off_screen():
                             balloon.draw(frame)
                             if balloon.check_collision(finger_x[0], finger_y[0]):
-                                threading.Thread(target=playsound, args=("D:/opencv/pop.mp3",), daemon=True).start()
+                                threading.Thread(target=playsound, args=("pop.mp3",), daemon=True).start()
                                 new_balloons.append(Balloon(frame.shape[1], frame.shape[0]))
                                 self.score += 1
                             else:
