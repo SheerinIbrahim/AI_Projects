@@ -1,3 +1,5 @@
-opencv-python
-playsound==1.2.2
-mediapipe
+opencv-python==4.5.5.62
+playsound
+numpy==1.24.0
+mediapipe==0.10.3
+HandTrackingSheerin
