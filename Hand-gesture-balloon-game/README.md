@@ -1,4 +1,4 @@
-# 🎈 PalmPop - Hand Gesture Balloon Game
+# 🎈 Hand Gesture Balloon Game
 
 PalmPop is an interactive OpenCV-based game where you pop balloons using hand gestures detected via your webcam! Raise your palm to pause the game, and use your index finger to pop floating balloons. 
 
