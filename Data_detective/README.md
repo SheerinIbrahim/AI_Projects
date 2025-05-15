@@ -23,6 +23,6 @@ Welcome to **Data Detective**, an open-source Exploratory Data Analysis (EDA) to
 
 ## 🌐 Live App
 
-🔗 Try the EDA Tool on Streamlit Cloud 
-(https://datadetective-e8omca9wt5g6nejq96s633.streamlit.app/)
+🔗 Try the EDA Tool on [Streamlit Cloud](https://datadetective-e8omca9wt5g6nejq96s633.streamlit.app/)
+
 
