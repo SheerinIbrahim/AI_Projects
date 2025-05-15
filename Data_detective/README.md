@@ -2,8 +2,6 @@
 
 Welcome to **Data Detective**, an open-source Exploratory Data Analysis (EDA) tool built using Python and Streamlit. Upload any CSV file and get instant insights through statistics and visualizations — no coding required.
 
----
-
 ## 🚀 Features
 
 - 📂 Upload your own CSV dataset
@@ -15,7 +13,6 @@ Welcome to **Data Detective**, an open-source Exploratory Data Analysis (EDA) to
   - Pair plots for multivariate analysis
 - 🧠 Understand your data in seconds!
 
----
 
 ## 🧪 Tech Stack
 
